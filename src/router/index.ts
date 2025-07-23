@@ -10,6 +10,9 @@ const routes = [
             { path: '/courses/:courseName/:courseDir', component: ()=>import('../views/CourseDetail.vue') },
         ]
     },
+    {
+        path:'/article',component:()=>import('../views/ArticlePage.vue')
+    }
 ]
 
 const router = createRouter({
