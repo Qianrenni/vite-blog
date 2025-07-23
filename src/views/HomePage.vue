@@ -2,7 +2,7 @@
   <div class="container-column container-align-center">
     <!-- Hero Section -->
     <section class="text-secondary container-column container-align-center gap container-space-evenly" style="min-height: 400px;">
-      <h1>你好！我是QIANRENNI</h1>
+      <h1>你好！我是QYANI</h1>
       <p>计算机专业学生 · 知识分享者</p>
       <router-link to="/about" class="button">了解更多</router-link>
     </section>
