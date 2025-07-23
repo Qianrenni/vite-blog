@@ -1,7 +1,7 @@
 <template>
   <div class="course-detail-container  ">
       <QCollapsibleSection  ref="siderbar" direction="up" class="sidebar-container " :is-show-arrow="sidebarArrowShow">
-        <nav class="sidebar ">
+        <nav class="sidebar " style="max-width: 200px;">
         <QNavSection :sections="sections" @select="handleNavigation"  :title="`课程目录`"/>
         </nav>
       </QCollapsibleSection>
@@ -11,7 +11,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import {ref, onBeforeMount, onBeforeUnmount, watch} from 'vue'
+import {ref, onBeforeMount, onBeforeUnmount, watch,defineOptions} from 'vue'
 import { useRoute } from 'vue-router'
 import { QCollapsibleSection, QMarkdownRender, QNavSection } from "qyani-components"
 defineOptions({
@@ -53,14 +53,16 @@ const getFirstLeaf = (nodes: any[]): any | null => {
   }
   return null
 }
-
+const cache:{ [key: string]: string } = {}
 const loadMarkdownContent = async (courseDir: string, fileName: string) => {
   try {
     const response = await fetch(`/assets/md/${courseDir}/content/${fileName}`)
     if(!response.ok){
       throw new Error('Network response was not ok')
     }
-    markdownContent.value = await response.text();
+    cache[fileName] = await response.text();
+    markdownContent.value = cache[fileName];
+
   } catch (err) {
     console.log(err);
     markdownContent.value = `<h2>无法加载 ${fileName}</h2>`
