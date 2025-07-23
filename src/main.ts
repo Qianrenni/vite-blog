@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-// import 'qyani-components/dist/qyani-components.css'
+import 'qyani-components/dist/qyani-components.css'
 import '../public/assets/css/private.css'
 import qcomponents from 'qyani-components'
 import router from './router'
