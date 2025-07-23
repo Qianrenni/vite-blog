@@ -1,0 +1,155 @@
+[
+  {
+    "title": "一、算法基础理论",
+    "level": 1,
+    "id": "001-一算法基础理论.md",
+    "children": []
+  },
+  {
+    "title": "二、数据结构",
+    "level": 1,
+    "id": "002-二数据结构.md",
+    "children": [
+      {
+        "title": "1. 线性结构",
+        "level": 2,
+        "id": "003-1 线性结构.md",
+        "children": []
+      },
+      {
+        "title": "2. 非线性数据结构",
+        "level": 2,
+        "id": "004-2 非线性数据结构.md",
+        "children": []
+      },
+      {
+        "title": "3. 高级数据结构",
+        "level": 2,
+        "id": "005-3 高级数据结构.md",
+        "children": []
+      },
+      {
+        "title": "4.数据结构对应算法",
+        "level": 2,
+        "id": "006-4数据结构对应算法.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "三、算法设计范式",
+    "level": 1,
+    "id": "007-三算法设计范式.md",
+    "children": [
+      {
+        "title": "1.排序算法",
+        "level": 2,
+        "id": "008-1排序算法.md",
+        "children": []
+      },
+      {
+        "title": "2. 分治法（Divide & Conquer）",
+        "level": 2,
+        "id": "009-2 分治法Divide  Conquer.md",
+        "children": []
+      },
+      {
+        "title": "2. 动态规划（DP）",
+        "level": 2,
+        "id": "010-2 动态规划DP.md",
+        "children": []
+      },
+      {
+        "title": "3. 贪心算法",
+        "level": 2,
+        "id": "011-3 贪心算法.md",
+        "children": []
+      },
+      {
+        "title": "4. 回溯法",
+        "level": 2,
+        "id": "012-4 回溯法.md",
+        "children": []
+      },
+      {
+        "title": "5. 二分搜索",
+        "level": 2,
+        "id": "013-5 二分搜索.md",
+        "children": []
+      },
+      {
+        "title": "6. 滑动窗口",
+        "level": 2,
+        "id": "014-6 滑动窗口.md",
+        "children": []
+      },
+      {
+        "title": "7.分支限界",
+        "level": 2,
+        "id": "015-7分支限界.md",
+        "children": []
+      },
+      {
+        "title": "前缀和",
+        "level": 2,
+        "id": "016-前缀和.md",
+        "children": []
+      },
+      {
+        "title": "差分",
+        "level": 2,
+        "id": "017-差分.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "四、高级专题",
+    "level": 1,
+    "id": "018-四高级专题.md",
+    "children": [
+      {
+        "title": "1. 数论算法",
+        "level": 2,
+        "id": "019-1 数论算法.md",
+        "children": []
+      },
+      {
+        "title": "2. 字符串算法",
+        "level": 2,
+        "id": "020-2 字符串算法.md",
+        "children": []
+      },
+      {
+        "title": "2. 计算几何",
+        "level": 2,
+        "id": "021-2 计算几何.md",
+        "children": []
+      },
+      {
+        "title": "3. 网络流算法",
+        "level": 2,
+        "id": "022-3 网络流算法.md",
+        "children": []
+      },
+      {
+        "title": "4. NP完全理论",
+        "level": 2,
+        "id": "023-4 NP完全理论.md",
+        "children": []
+      },
+      {
+        "title": "5.位运算",
+        "level": 2,
+        "id": "024-5位运算.md",
+        "children": []
+      },
+      {
+        "title": "实际应用场景",
+        "level": 2,
+        "id": "025-实际应用场景.md",
+        "children": []
+      }
+    ]
+  }
+]

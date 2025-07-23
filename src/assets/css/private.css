@@ -1,0 +1,63 @@
+:root{
+    /* 自定义变量 */
+    --content-height-2 :calc( 100vh - 3rem);
+    --content-height-without-header:calc( 100vh - 20px - 3rem );
+}
+
+.course-detail-container {
+    flex:1;
+    height: var(--content-height-2);
+    display: flex;
+    gap: 1em;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.sidebar {
+    display: flex;
+    height: var(--content-height-2);
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Firefox */
+
+}
+
+
+.content-container {
+    flex: 1;
+    overflow-y: auto; /* 关键：允许垂直滚动 */
+    scrollbar-width: thin; /* Firefox */
+}
+/* 隐藏滚动条轨道和滑块（WebKit 浏览器） */
+.content-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* 火狐浏览器 */
+@supports (-moz-appearance: none) {
+    .content-container {
+        scrollbar-width: none; /* Firefox */
+    }
+}
+
+/* IE/Edge */
+.content-container::-webkit-scrollbar {
+    -ms-overflow-style: none;
+}
+@media screen and (max-width: 768px) {
+
+    .course-detail-container{
+        flex-direction: column-reverse;
+        height: calc( var(--content-height-without-header) - 10px);
+    }
+    .sidebar-container{
+        position: sticky;
+        bottom: 0;
+    }
+    .sidebar {
+        height: auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,150 @@
+[
+  {
+    "title": "基础语法与核心概念",
+    "level": 1,
+    "id": "001-基础语法与核心概念.md",
+    "children": [
+      {
+        "title": "数据类型与数据结构",
+        "level": 2,
+        "id": "002-数据类型与数据结构.md",
+        "children": []
+      },
+      {
+        "title": "控制流",
+        "level": 2,
+        "id": "003-控制流.md",
+        "children": []
+      },
+      {
+        "title": "函数",
+        "level": 2,
+        "id": "004-函数.md",
+        "children": []
+      },
+      {
+        "title": "异常处理",
+        "level": 2,
+        "id": "005-异常处理.md",
+        "children": []
+      },
+      {
+        "title": "文件读写",
+        "level": 2,
+        "id": "006-文件读写.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "进阶特性",
+    "level": 1,
+    "id": "007-进阶特性.md",
+    "children": [
+      {
+        "title": "面向对象编程（OOP）",
+        "level": 2,
+        "id": "008-面向对象编程OOP.md",
+        "children": []
+      },
+      {
+        "title": "描述符",
+        "level": 2,
+        "id": "009-描述符.md",
+        "children": []
+      },
+      {
+        "title": "模块与包",
+        "level": 2,
+        "id": "010-模块与包.md",
+        "children": []
+      },
+      {
+        "title": "迭代器与生成器",
+        "level": 2,
+        "id": "011-迭代器与生成器.md",
+        "children": []
+      },
+      {
+        "title": "装饰器",
+        "level": 2,
+        "id": "012-装饰器.md",
+        "children": []
+      },
+      {
+        "title": "上下文管理器",
+        "level": 2,
+        "id": "013-上下文管理器.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "高级特性与工具",
+    "level": 1,
+    "id": "014-高级特性与工具.md",
+    "children": [
+      {
+        "title": "线程并发与同步",
+        "level": 2,
+        "id": "015-线程并发与同步.md",
+        "children": []
+      },
+      {
+        "title": "asyncio 模块",
+        "level": 2,
+        "id": "016-asyncio 模块.md",
+        "children": []
+      },
+      {
+        "title": "网络编程",
+        "level": 2,
+        "id": "017-网络编程.md",
+        "children": []
+      },
+      {
+        "title": "加密与解密",
+        "level": 2,
+        "id": "018-加密与解密.md",
+        "children": []
+      },
+      {
+        "title": "数据处理与分析",
+        "level": 2,
+        "id": "019-数据处理与分析.md",
+        "children": []
+      },
+      {
+        "title": "测试与调试",
+        "level": 2,
+        "id": "020-测试与调试.md",
+        "children": []
+      },
+      {
+        "title": "性能优化",
+        "level": 2,
+        "id": "021-性能优化.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "项目经验与实战能力",
+    "level": 1,
+    "id": "022-项目经验与实战能力.md",
+    "children": [
+      {
+        "title": "1. 常见场景",
+        "level": 2,
+        "id": "023-1 常见场景.md",
+        "children": []
+      },
+      {
+        "title": "2. 项目展示",
+        "level": 2,
+        "id": "024-2 项目展示.md",
+        "children": []
+      }
+    ]
+  }
+]

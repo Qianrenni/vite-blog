@@ -1,0 +1,32 @@
+[
+  {
+    "title": "本地缓存与Redis对比",
+    "level": 1,
+    "id": "001-本地缓存与Redis对比.md",
+    "children": []
+  },
+  {
+    "title": "🔥 一、缓存穿透（Cache Penetration）",
+    "level": 1,
+    "id": "002-一缓存穿透Cache Penetration.md",
+    "children": []
+  },
+  {
+    "title": "🔥 二、缓存击穿（Cache Breakdown）",
+    "level": 1,
+    "id": "003-二缓存击穿Cache Breakdown.md",
+    "children": []
+  },
+  {
+    "title": "🔥 三、缓存雪崩（Cache Avalanche）",
+    "level": 1,
+    "id": "004-三缓存雪崩Cache Avalanche.md",
+    "children": []
+  },
+  {
+    "title": "📊 总结对比表",
+    "level": 1,
+    "id": "005-总结对比表.md",
+    "children": []
+  }
+]

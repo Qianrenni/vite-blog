@@ -1,0 +1,193 @@
+[
+  {
+    "title": "一、JavaScript 基础",
+    "level": 1,
+    "id": "001-一JavaScript 基础.md",
+    "children": [
+      {
+        "title": "语言概述",
+        "level": 2,
+        "id": "002-语言概述.md",
+        "children": []
+      },
+      {
+        "title": "语法基础",
+        "level": 2,
+        "id": "003-语法基础.md",
+        "children": []
+      },
+      {
+        "title": "运算符",
+        "level": 2,
+        "id": "004-运算符.md",
+        "children": []
+      },
+      {
+        "title": "条件语句",
+        "level": 2,
+        "id": "005-条件语句.md",
+        "children": []
+      },
+      {
+        "title": "循环语句",
+        "level": 2,
+        "id": "006-循环语句.md",
+        "children": []
+      },
+      {
+        "title": "函数",
+        "level": 2,
+        "id": "007-函数.md",
+        "children": []
+      },
+      {
+        "title": "作用域与闭包",
+        "level": 2,
+        "id": "008-作用域与闭包.md",
+        "children": []
+      },
+      {
+        "title": "错误处理",
+        "level": 2,
+        "id": "009-错误处理.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "二、进阶知识",
+    "level": 1,
+    "id": "010-二进阶知识.md",
+    "children": [
+      {
+        "title": "对象与原型",
+        "level": 2,
+        "id": "011-对象与原型.md",
+        "children": []
+      },
+      {
+        "title": "数组操作",
+        "level": 2,
+        "id": "012-数组操作.md",
+        "children": []
+      },
+      {
+        "title": "字符串与正则表达式",
+        "level": 2,
+        "id": "013-字符串与正则表达式.md",
+        "children": []
+      },
+      {
+        "title": "异步编程",
+        "level": 2,
+        "id": "014-异步编程.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "三、浏览器环境",
+    "level": 1,
+    "id": "015-三浏览器环境.md",
+    "children": [
+      {
+        "title": "DOM 操作",
+        "level": 2,
+        "id": "016-DOM 操作.md",
+        "children": []
+      },
+      {
+        "title": "BOM 操作",
+        "level": 2,
+        "id": "017-BOM 操作.md",
+        "children": []
+      },
+      {
+        "title": "CSS 操作",
+        "level": 2,
+        "id": "018-CSS 操作.md",
+        "children": []
+      },
+      {
+        "title": "AJAX",
+        "level": 2,
+        "id": "019-AJAX.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "四、Node.js 环境",
+    "level": 1,
+    "id": "020-四Nodejs 环境.md",
+    "children": []
+  },
+  {
+    "title": "五、现代 JavaScript（ES6+）",
+    "level": 1,
+    "id": "021-五现代 JavaScriptES6.md",
+    "children": [
+      {
+        "title": "1. 变量与数据类型",
+        "level": 2,
+        "id": "022-1 变量与数据类型.md",
+        "children": []
+      },
+      {
+        "title": "2. 模板字符串",
+        "level": 2,
+        "id": "023-2 模板字符串.md",
+        "children": []
+      },
+      {
+        "title": "3. 新特性",
+        "level": 2,
+        "id": "024-3 新特性.md",
+        "children": []
+      },
+      {
+        "title": "4. 迭代器与生成器",
+        "level": 2,
+        "id": "025-4 迭代器与生成器.md",
+        "children": []
+      },
+      {
+        "title": "5. 装饰器",
+        "level": 2,
+        "id": "026-5 装饰器.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "六、性能优化与调试",
+    "level": 1,
+    "id": "027-六性能优化与调试.md",
+    "children": []
+  },
+  {
+    "title": "七、常见面试题",
+    "level": 1,
+    "id": "028-七常见面试题.md",
+    "children": [
+      {
+        "title": "基础知识",
+        "level": 2,
+        "id": "029-基础知识.md",
+        "children": []
+      },
+      {
+        "title": "进阶问题",
+        "level": 2,
+        "id": "030-进阶问题.md",
+        "children": []
+      },
+      {
+        "title": "框架相关",
+        "level": 2,
+        "id": "031-框架相关.md",
+        "children": []
+      }
+    ]
+  }
+]

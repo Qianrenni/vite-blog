@@ -1,0 +1,324 @@
+[
+  {
+    "title": "1. SQL概述",
+    "level": 1,
+    "id": "001-1 SQL概述.md",
+    "children": []
+  },
+  {
+    "title": "2. 数据库基础",
+    "level": 1,
+    "id": "002-2 数据库基础.md",
+    "children": []
+  },
+  {
+    "title": "3. SQL基本语法",
+    "level": 1,
+    "id": "003-3 SQL基本语法.md",
+    "children": [
+      {
+        "title": "SQL语句的结构与书写规范",
+        "level": 2,
+        "id": "004-SQL语句的结构与书写规范.md",
+        "children": []
+      },
+      {
+        "title": "注释",
+        "level": 2,
+        "id": "005-注释.md",
+        "children": []
+      },
+      {
+        "title": "SQL关键字",
+        "level": 2,
+        "id": "006-SQL关键字.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "4. 数据查询（SELECT）",
+    "level": 1,
+    "id": "007-4 数据查询SELECT.md",
+    "children": [
+      {
+        "title": "4.1 基本查询",
+        "level": 2,
+        "id": "008-41 基本查询.md",
+        "children": []
+      },
+      {
+        "title": "4.2 条件查询",
+        "level": 2,
+        "id": "009-42 条件查询.md",
+        "children": []
+      },
+      {
+        "title": "4.3 排序",
+        "level": 2,
+        "id": "010-43 排序.md",
+        "children": []
+      },
+      {
+        "title": "4.4 分组与聚合",
+        "level": 2,
+        "id": "011-44 分组与聚合.md",
+        "children": []
+      },
+      {
+        "title": "4.5 连接查询",
+        "level": 2,
+        "id": "012-45 连接查询.md",
+        "children": []
+      },
+      {
+        "title": "4.6 子查询",
+        "level": 2,
+        "id": "013-46 子查询.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "5. 数据操作（DML - Data Manipulation Language）",
+    "level": 1,
+    "id": "014-5 数据操作DML - Data Manipulation Language.md",
+    "children": []
+  },
+  {
+    "title": "6. 数据定义（DDL - Data Definition Language）",
+    "level": 1,
+    "id": "015-6 数据定义DDL - Data Definition Language.md",
+    "children": [
+      {
+        "title": "1. 创建表：`CREATE TABLE`",
+        "level": 2,
+        "id": "016-1 创建表CREATE TABLE.md",
+        "children": []
+      },
+      {
+        "title": "2. 修改表：`ALTER TABLE`",
+        "level": 2,
+        "id": "017-2 修改表ALTER TABLE.md",
+        "children": []
+      },
+      {
+        "title": "3. 删除表：`DROP TABLE`",
+        "level": 2,
+        "id": "018-3 删除表DROP TABLE.md",
+        "children": []
+      },
+      {
+        "title": "4. 创建索引：`CREATE INDEX`",
+        "level": 2,
+        "id": "019-4 创建索引CREATE INDEX.md",
+        "children": []
+      },
+      {
+        "title": "5. 删除索引：`DROP INDEX`",
+        "level": 2,
+        "id": "020-5 删除索引DROP INDEX.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "7. 数据控制（DCL - Data Control Language）",
+    "level": 1,
+    "id": "021-7 数据控制DCL - Data Control Language.md",
+    "children": [
+      {
+        "title": "1. 授权（GRANT）",
+        "level": 2,
+        "id": "022-1 授权GRANT.md",
+        "children": []
+      },
+      {
+        "title": "2. 撤销权限（REVOKE）",
+        "level": 2,
+        "id": "023-2 撤销权限REVOKE.md",
+        "children": []
+      },
+      {
+        "title": "3. 权限管理的实际应用",
+        "level": 2,
+        "id": "024-3 权限管理的实际应用.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "8. 事务管理",
+    "level": 1,
+    "id": "025-8 事务管理.md",
+    "children": [
+      {
+        "title": "1. 事务的基本操作",
+        "level": 2,
+        "id": "026-1 事务的基本操作.md",
+        "children": []
+      },
+      {
+        "title": "2. ACID 特性",
+        "level": 2,
+        "id": "027-2 ACID 特性.md",
+        "children": []
+      },
+      {
+        "title": "3. 事务隔离级别",
+        "level": 2,
+        "id": "028-3 事务隔离级别.md",
+        "children": []
+      },
+      {
+        "title": "4. 事务管理的实际应用",
+        "level": 2,
+        "id": "029-4 事务管理的实际应用.md",
+        "children": []
+      },
+      {
+        "title": "5. 注意事项",
+        "level": 2,
+        "id": "030-5 注意事项.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "9. 高级功能",
+    "level": 1,
+    "id": "031-9 高级功能.md",
+    "children": [
+      {
+        "title": "9.1 视图（View）",
+        "level": 2,
+        "id": "032-91 视图View.md",
+        "children": []
+      },
+      {
+        "title": "9.2 存储过程与函数",
+        "level": 2,
+        "id": "033-92 存储过程与函数.md",
+        "children": []
+      },
+      {
+        "title": "9.3 触发器（Trigger）",
+        "level": 2,
+        "id": "034-93 触发器Trigger.md",
+        "children": []
+      },
+      {
+        "title": "9.4 窗口函数",
+        "level": 2,
+        "id": "035-94 窗口函数.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "10. SQL优化",
+    "level": 1,
+    "id": "036-10 SQL优化.md",
+    "children": [
+      {
+        "title": "1. 索引的使用与优化",
+        "level": 2,
+        "id": "037-1 索引的使用与优化.md",
+        "children": []
+      },
+      {
+        "title": "2. 查询执行计划（EXPLAIN）",
+        "level": 2,
+        "id": "038-2 查询执行计划EXPLAIN.md",
+        "children": []
+      },
+      {
+        "title": "3. 避免全表扫描",
+        "level": 2,
+        "id": "039-3 避免全表扫描.md",
+        "children": []
+      },
+      {
+        "title": "4. 优化 JOIN 操作",
+        "level": 2,
+        "id": "040-4 优化 JOIN 操作.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "11. 常见问题与实践",
+    "level": 1,
+    "id": "041-11 常见问题与实践.md",
+    "children": [
+      {
+        "title": "SQL注入及其防范",
+        "level": 2,
+        "id": "042-SQL注入及其防范.md",
+        "children": []
+      },
+      {
+        "title": "处理NULL值",
+        "level": 2,
+        "id": "043-处理NULL值.md",
+        "children": []
+      },
+      {
+        "title": "分页查询（LIMIT/OFFSET）",
+        "level": 2,
+        "id": "044-分页查询LIMITOFFSET.md",
+        "children": []
+      },
+      {
+        "title": "时间与日期处理",
+        "level": 2,
+        "id": "045-时间与日期处理.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "12. 数据库设计与规范化",
+    "level": 1,
+    "id": "046-12 数据库设计与规范化.md",
+    "children": [
+      {
+        "title": "1. 数据建模（ER图）",
+        "level": 2,
+        "id": "047-1 数据建模ER图.md",
+        "children": []
+      },
+      {
+        "title": "2. 设计高效的数据表",
+        "level": 2,
+        "id": "048-2 设计高效的数据表.md",
+        "children": []
+      },
+      {
+        "title": "3. 数据库性能调优",
+        "level": 2,
+        "id": "049-3 数据库性能调优.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "NoSQL数据库基本概念",
+    "level": 1,
+    "id": "050-NoSQL数据库基本概念.md",
+    "children": [
+      {
+        "title": "1. Redis简介",
+        "level": 2,
+        "id": "051-1 Redis简介.md",
+        "children": []
+      },
+      {
+        "title": "2. MongoDB简介",
+        "level": 2,
+        "id": "052-2 MongoDB简介.md",
+        "children": []
+      }
+    ]
+  }
+]
