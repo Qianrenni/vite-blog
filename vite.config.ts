@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      'qyani-components': "F:/eclipse/worakjava/qyani-components/src/index.ts"
+      // 'qyani-components': "F:/eclipse/worakjava/qyani-components/src/index.ts"
     }
   }
 })
