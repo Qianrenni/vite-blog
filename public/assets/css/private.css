@@ -1,5 +1,6 @@
 :root{
     /* 自定义变量 */
+    font-size: 12px;
     --content-height-2 :calc( 100vh - 4.2rem);
     --content-height-without-header:calc( 100vh - 20px - 3rem );
 }
