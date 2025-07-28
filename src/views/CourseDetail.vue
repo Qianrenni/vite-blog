@@ -1,7 +1,7 @@
 <template>
   <div class="course-detail-container  ">
       <QCollapsibleSection  ref="siderbar" direction="up" class="sidebar-container " :is-show-arrow="sidebarArrowShow">
-        <nav class="sidebar " style="max-width: 200px;">
+        <nav class="sidebar ">
         <QNavSection :sections="sections" @select="handleNavigation"  :title="`课程目录`"/>
         </nav>
       </QCollapsibleSection>

@@ -37,7 +37,7 @@
           <router-link to="/about">关于我</router-link>
         </nav>
         <div class="container-align-center">
-          <QThemeToggle/>
+          <QThemeToggle size="24" />
           <button class="hamburger" @click="toggleMenu">
             ☰
           </button>

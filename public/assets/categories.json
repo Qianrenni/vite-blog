@@ -30,6 +30,10 @@
       {
         "name": "编译原理",
         "dir": "bian-yi-yuan-li"
+      },
+      {
+        "name": "TypeScript",
+        "dir": "TypeScript"
       }
     ]
   },
