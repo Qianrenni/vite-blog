@@ -11,7 +11,7 @@
   "dependencies": {
     "install": "^0.13.0",
     "pinia": "^3.0.3",
-    "qyani-components": "latest",
+    "qyani-components": "^1.1.8",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1",
     "vuex": "^4.1.0"
