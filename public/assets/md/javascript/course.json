@@ -1,191 +1,542 @@
 [
   {
-    "title": "一、JavaScript 基础",
+    "title": "一、JavaScript 基础理论",
     "level": 1,
-    "id": "001-一JavaScript 基础.md",
+    "id": "001-一JavaScript 基础理论.md",
     "children": [
       {
-        "title": "语言概述",
+        "title": "1.1 JavaScript 语言概述",
         "level": 2,
-        "id": "002-语言概述.md",
+        "id": "002-11 JavaScript 语言概述.md",
         "children": []
       },
       {
-        "title": "语法基础",
+        "title": "1.2 JavaScript 发展历史",
         "level": 2,
-        "id": "003-语法基础.md",
-        "children": []
-      },
-      {
-        "title": "运算符",
-        "level": 2,
-        "id": "004-运算符.md",
-        "children": []
-      },
-      {
-        "title": "条件语句",
-        "level": 2,
-        "id": "005-条件语句.md",
-        "children": []
-      },
-      {
-        "title": "循环语句",
-        "level": 2,
-        "id": "006-循环语句.md",
-        "children": []
-      },
-      {
-        "title": "函数",
-        "level": 2,
-        "id": "007-函数.md",
-        "children": []
-      },
-      {
-        "title": "作用域与闭包",
-        "level": 2,
-        "id": "008-作用域与闭包.md",
-        "children": []
-      },
-      {
-        "title": "错误处理",
-        "level": 2,
-        "id": "009-错误处理.md",
+        "id": "003-12 JavaScript 发展历史.md",
         "children": []
       }
     ]
   },
   {
-    "title": "二、进阶知识",
+    "title": "二、JavaScript 核心语法",
     "level": 1,
-    "id": "010-二进阶知识.md",
+    "id": "004-二JavaScript 核心语法.md",
     "children": [
       {
-        "title": "对象与原型",
+        "title": "2.1 变量声明和作用域",
         "level": 2,
-        "id": "011-对象与原型.md",
+        "id": "005-21 变量声明和作用域.md",
         "children": []
       },
       {
-        "title": "数组操作",
+        "title": "2.2 数据类型系统",
         "level": 2,
-        "id": "012-数组操作.md",
+        "id": "006-22 数据类型系统.md",
         "children": []
       },
       {
-        "title": "字符串与正则表达式",
+        "title": "2.3 运算符体系",
         "level": 2,
-        "id": "013-字符串与正则表达式.md",
-        "children": []
-      },
-      {
-        "title": "异步编程",
-        "level": 2,
-        "id": "014-异步编程.md",
+        "id": "007-23 运算符体系.md",
         "children": []
       }
     ]
   },
   {
-    "title": "三、浏览器环境",
+    "title": "三、程序控制结构",
     "level": 1,
-    "id": "015-三浏览器环境.md",
+    "id": "008-三程序控制结构.md",
     "children": [
       {
-        "title": "DOM 操作",
+        "title": "3.1 条件控制语句",
         "level": 2,
-        "id": "016-DOM 操作.md",
+        "id": "009-31 条件控制语句.md",
         "children": []
       },
       {
-        "title": "BOM 操作",
+        "title": "3.2 循环控制语句",
         "level": 2,
-        "id": "017-BOM 操作.md",
-        "children": []
-      },
-      {
-        "title": "CSS 操作",
-        "level": 2,
-        "id": "018-CSS 操作.md",
-        "children": []
-      },
-      {
-        "title": "AJAX",
-        "level": 2,
-        "id": "019-AJAX.md",
+        "id": "010-32 循环控制语句.md",
         "children": []
       }
     ]
   },
   {
-    "title": "四、Node.js 环境",
+    "title": "四、函数编程概念",
     "level": 1,
-    "id": "020-四Nodejs 环境.md",
-    "children": []
-  },
-  {
-    "title": "五、现代 JavaScript（ES6+）",
-    "level": 1,
-    "id": "021-五现代 JavaScriptES6.md",
+    "id": "011-四函数编程概念.md",
     "children": [
       {
-        "title": "1. 变量与数据类型",
+        "title": "4.1 函数定义和调用",
         "level": 2,
-        "id": "022-1 变量与数据类型.md",
+        "id": "012-41 函数定义和调用.md",
         "children": []
       },
       {
-        "title": "2. 模板字符串",
+        "title": "4.2 函数参数处理",
         "level": 2,
-        "id": "023-2 模板字符串.md",
+        "id": "013-42 函数参数处理.md",
         "children": []
       },
       {
-        "title": "3. 新特性",
+        "title": "4.3 作用域和闭包",
         "level": 2,
-        "id": "024-3 新特性.md",
-        "children": []
-      },
-      {
-        "title": "4. 迭代器与生成器",
-        "level": 2,
-        "id": "025-4 迭代器与生成器.md",
-        "children": []
-      },
-      {
-        "title": "5. 装饰器",
-        "level": 2,
-        "id": "026-5 装饰器.md",
+        "id": "014-43 作用域和闭包.md",
         "children": []
       }
     ]
   },
   {
-    "title": "六、性能优化与调试",
+    "title": "五、面向对象编程",
     "level": 1,
-    "id": "027-六性能优化与调试.md",
-    "children": []
-  },
-  {
-    "title": "七、常见面试题",
-    "level": 1,
-    "id": "028-七常见面试题.md",
+    "id": "015-五面向对象编程.md",
     "children": [
       {
-        "title": "基础知识",
+        "title": "5.1 对象创建方式",
         "level": 2,
-        "id": "029-基础知识.md",
+        "id": "016-51 对象创建方式.md",
         "children": []
       },
       {
-        "title": "进阶问题",
+        "title": "5.2 原型和原型链",
         "level": 2,
-        "id": "030-进阶问题.md",
+        "id": "017-52 原型和原型链.md",
         "children": []
       },
       {
-        "title": "框架相关",
+        "title": "5.3 继承机制",
         "level": 2,
-        "id": "031-框架相关.md",
+        "id": "018-53 继承机制.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "六、数组和字符串处理",
+    "level": 1,
+    "id": "019-六数组和字符串处理.md",
+    "children": [
+      {
+        "title": "6.1 数组操作方法",
+        "level": 2,
+        "id": "020-61 数组操作方法.md",
+        "children": []
+      },
+      {
+        "title": "6.2 字符串处理技术",
+        "level": 2,
+        "id": "021-62 字符串处理技术.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "七、正则表达式",
+    "level": 1,
+    "id": "022-七正则表达式.md",
+    "children": [
+      {
+        "title": "7.1 正则表达式基础",
+        "level": 2,
+        "id": "023-71 正则表达式基础.md",
+        "children": []
+      },
+      {
+        "title": "7.2 正则表达式应用",
+        "level": 2,
+        "id": "024-72 正则表达式应用.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "八、异步编程模型",
+    "level": 1,
+    "id": "025-八异步编程模型.md",
+    "children": [
+      {
+        "title": "8.1 异步编程基础",
+        "level": 2,
+        "id": "026-81 异步编程基础.md",
+        "children": []
+      },
+      {
+        "title": "8.2 Promise 编程",
+        "level": 2,
+        "id": "027-82 Promise 编程.md",
+        "children": []
+      },
+      {
+        "title": "8.3 现代异步语法",
+        "level": 2,
+        "id": "028-83 现代异步语法.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "九、Web API 操作",
+    "level": 1,
+    "id": "029-九Web API 操作.md",
+    "children": [
+      {
+        "title": "9.1 DOM 操作技术",
+        "level": 2,
+        "id": "030-91 DOM 操作技术.md",
+        "children": []
+      },
+      {
+        "title": "9.2 BOM 对象操作",
+        "level": 2,
+        "id": "031-92 BOM 对象操作.md",
+        "children": []
+      },
+      {
+        "title": "9.3 事件处理系统",
+        "level": 2,
+        "id": "032-93 事件处理系统.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十、ES6+ 新特性详解",
+    "level": 1,
+    "id": "033-十ES6 新特性详解.md",
+    "children": [
+      {
+        "title": "10.1 现代语法特性",
+        "level": 2,
+        "id": "034-101 现代语法特性.md",
+        "children": []
+      },
+      {
+        "title": "10.2 模块化系统",
+        "level": 2,
+        "id": "035-102 模块化系统.md",
+        "children": []
+      },
+      {
+        "title": "10.3 新数据结构",
+        "level": 2,
+        "id": "036-103 新数据结构.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十一、JavaScript 错误处理机制详解",
+    "level": 1,
+    "id": "037-十一JavaScript 错误处理机制详解.md",
+    "children": [
+      {
+        "title": "11.1 错误类型识别",
+        "level": 2,
+        "id": "038-111 错误类型识别.md",
+        "children": []
+      },
+      {
+        "title": "11.2 异常处理策略",
+        "level": 2,
+        "id": "039-112 异常处理策略.md",
+        "children": []
+      },
+      {
+        "title": "总结：错误处理最佳实践",
+        "level": 2,
+        "id": "040-总结错误处理最佳实践.md",
+        "children": []
+      },
+      {
+        "title": "附：常见错误处理模式",
+        "level": 2,
+        "id": "041-附常见错误处理模式.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十二、JavaScript 性能优化技术详解",
+    "level": 1,
+    "id": "042-十二JavaScript 性能优化技术详解.md",
+    "children": [
+      {
+        "title": "12.1 内存管理优化",
+        "level": 2,
+        "id": "043-121 内存管理优化.md",
+        "children": []
+      },
+      {
+        "title": "12.2 代码性能优化",
+        "level": 2,
+        "id": "044-122 代码性能优化.md",
+        "children": []
+      },
+      {
+        "title": "总结：性能优化 checklist",
+        "level": 2,
+        "id": "045-总结性能优化 checklist.md",
+        "children": []
+      },
+      {
+        "title": "附：性能测试工具推荐",
+        "level": 2,
+        "id": "046-附性能测试工具推荐.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十三、JavaScript 调试与测试详解",
+    "level": 1,
+    "id": "047-十三JavaScript 调试与测试详解.md",
+    "children": [
+      {
+        "title": "13.1 调试技术",
+        "level": 2,
+        "id": "048-131 调试技术.md",
+        "children": []
+      },
+      {
+        "title": "13.2 测试策略",
+        "level": 2,
+        "id": "049-132 测试策略.md",
+        "children": []
+      },
+      {
+        "title": "总结：调试与测试最佳实践",
+        "level": 2,
+        "id": "050-总结调试与测试最佳实践.md",
+        "children": []
+      },
+      {
+        "title": "附：完整测试金字塔",
+        "level": 2,
+        "id": "051-附完整测试金字塔.md",
+        "children": []
+      },
+      {
+        "title": "工具链推荐",
+        "level": 2,
+        "id": "052-工具链推荐.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十四、JavaScript 安全防护措施详解",
+    "level": 1,
+    "id": "053-十四JavaScript 安全防护措施详解.md",
+    "children": [
+      {
+        "title": "14.1 常见安全威胁",
+        "level": 2,
+        "id": "054-141 常见安全威胁.md",
+        "children": []
+      },
+      {
+        "title": "14.2 安全编码实践",
+        "level": 2,
+        "id": "055-142 安全编码实践.md",
+        "children": []
+      },
+      {
+        "title": "总结：JavaScript 安全防护 checklist",
+        "level": 2,
+        "id": "056-总结JavaScript 安全防护 checklist.md",
+        "children": []
+      },
+      {
+        "title": "附：安全开发原则（Secure by Design）",
+        "level": 2,
+        "id": "057-附安全开发原则Secure by Design.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十五、Node.js 基础知识",
+    "level": 1,
+    "id": "058-十五Nodejs 基础知识.md",
+    "children": [
+      {
+        "title": "15.1 Node.js 概述",
+        "level": 2,
+        "id": "059-151 Nodejs 概述.md",
+        "children": []
+      },
+      {
+        "title": "15.2 Node.js 核心模块",
+        "level": 2,
+        "id": "060-152 Nodejs 核心模块.md",
+        "children": []
+      },
+      {
+        "title": "15.3 模块系统",
+        "level": 2,
+        "id": "061-153 模块系统.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十六、Node.js 进阶特性",
+    "level": 1,
+    "id": "062-十六Nodejs 进阶特性.md",
+    "children": [
+      {
+        "title": "16.1 异步编程",
+        "level": 2,
+        "id": "063-161 异步编程.md",
+        "children": []
+      },
+      {
+        "title": "16.2 进程管理",
+        "level": 2,
+        "id": "064-162 进程管理.md",
+        "children": []
+      },
+      {
+        "title": "16.3 网络编程",
+        "level": 2,
+        "id": "065-163 网络编程.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十七、Node.js 生态系统",
+    "level": 1,
+    "id": "066-十七Nodejs 生态系统.md",
+    "children": [
+      {
+        "title": "17.1 包管理工具",
+        "level": 2,
+        "id": "067-171 包管理工具.md",
+        "children": []
+      },
+      {
+        "title": "17.2 构建工具",
+        "level": 2,
+        "id": "068-172 构建工具.md",
+        "children": []
+      },
+      {
+        "title": "17.3 测试框架",
+        "level": 2,
+        "id": "069-173 测试框架.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十八、Node.js 应用开发",
+    "level": 1,
+    "id": "070-十八Nodejs 应用开发.md",
+    "children": [
+      {
+        "title": "18.1 Web 框架",
+        "level": 2,
+        "id": "071-181 Web 框架.md",
+        "children": []
+      },
+      {
+        "title": "18.2 数据库集成",
+        "level": 2,
+        "id": "072-182 数据库集成.md",
+        "children": []
+      },
+      {
+        "title": "18.3 实时应用",
+        "level": 2,
+        "id": "073-183 实时应用.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "十九、部署和运维",
+    "level": 1,
+    "id": "074-十九部署和运维.md",
+    "children": [
+      {
+        "title": "19.1 应用部署",
+        "level": 2,
+        "id": "075-191 应用部署.md",
+        "children": []
+      },
+      {
+        "title": "19.2 性能监控",
+        "level": 2,
+        "id": "076-192 性能监控.md",
+        "children": []
+      },
+      {
+        "title": "19.3 安全防护",
+        "level": 2,
+        "id": "077-193 安全防护.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "二十、现代开发实践",
+    "level": 1,
+    "id": "078-二十现代开发实践.md",
+    "children": [
+      {
+        "title": "20.1 开发工具链",
+        "level": 2,
+        "id": "079-201 开发工具链.md",
+        "children": []
+      },
+      {
+        "title": "20.2 项目架构",
+        "level": 2,
+        "id": "080-202 项目架构.md",
+        "children": []
+      },
+      {
+        "title": "20.3 最佳实践",
+        "level": 2,
+        "id": "081-203 最佳实践.md",
+        "children": []
+      },
+      {
+        "title": "项目结构",
+        "level": 2,
+        "id": "082-项目结构.md",
+        "children": []
+      },
+      {
+        "title": "API 文档",
+        "level": 2,
+        "id": "083-API 文档.md",
+        "children": []
+      },
+      {
+        "title": "部署指南",
+        "level": 2,
+        "id": "084-部署指南.md",
+        "children": []
+      },
+      {
+        "title": "测试",
+        "level": 2,
+        "id": "085-测试.md",
+        "children": []
+      },
+      {
+        "title": "贡献指南",
+        "level": 2,
+        "id": "086-贡献指南.md",
+        "children": []
+      },
+      {
+        "title": "许可证",
+        "level": 2,
+        "id": "087-许可证.md",
         "children": []
       }
     ]
