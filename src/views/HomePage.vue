@@ -50,7 +50,7 @@ defineOptions({
 </script>
 <style scoped>
 .show-container{
-  background: url('public/images/bg1.png');
+  background: url(/images/bg1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
