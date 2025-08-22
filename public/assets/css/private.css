@@ -35,6 +35,84 @@
 }
 
 
+.loader-tech {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #0d1b2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-tech::before,
+.loader-tech::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #00b4d8;
+    opacity: 0;
+    animation: pulse-tech 1.8s infinite;
+}
+
+.loader-tech::after {
+    animation-delay: 0.6s;
+}
+
+@keyframes pulse-tech {
+    0% {
+        width: 40px;
+        opacity: 0.8;
+    }
+    100% {
+        width: 100px;
+        opacity: 0;
+    }
+}
+.loader-nature {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ripple {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #d3f6fd;
+    opacity: 0;
+    animation: ripple-animation 1.5s ease-out infinite;
+}
+
+.ripple:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.ripple:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.ripple:nth-child(3) {
+    animation-delay: 0.6s;
+}
+@keyframes ripple-animation {
+    0% {
+        transform: scale(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
 @media screen and (max-width: 768px) {
 
     .course-detail-container{
@@ -52,3 +130,4 @@
         max-width: 100%;
     }
 }
+
