@@ -10,7 +10,9 @@
           </div>
           <!-- 右侧子课程列表 -->
           <div class="sub-courses">
-            <QTag v-for="(course ,index) in category.courses" :key="index" :text="course.name" @click="clickCourse(course)"></QTag>
+            <span class="button-outline radius-third-rem padding-24rem" v-for="(course ,index) in category.courses" :key="index"  @click="clickCourse(course)">
+              {{ course.name }}
+            </span>
           </div>
         </div>
       </div>
@@ -23,16 +25,16 @@
 import {useTemplateRef} from 'vue';
 import { useRouter } from 'vue-router';
 import categories from '../../public/assets/categories.json';
-import { QCollapsibleSection, QTag} from "qyani-components";
+import { QCollapsibleSection} from "qyani-components";
 defineOptions({
   name: 'CourseNav',
 })
 const router = useRouter();
-const courseNav =useTemplateRef<QCollapsibleSection>('courseNav')
+const courseNav =useTemplateRef<typeof QCollapsibleSection>('courseNav')
 
 const clickCourse = (course: { name: string, dir: string }) => {
   console.log(course);
-  courseNav.value.toggle();
+  courseNav.value?.toggle();
   router.push({
     path: `/courses/${course.name}/${course.dir}`,
   });

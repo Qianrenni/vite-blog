@@ -1,12 +1,12 @@
 <template>
   <div class="course-detail-container  ">
       <QCollapsibleSection  ref="siderbar" direction="up" class="sidebar-container " :is-show-arrow="sidebarArrowShow">
-        <nav class="sidebar ">
+        <nav class="sidebar  scroll-container">
         <QNavSection :sections="sections" @select="handleNavigation"  :title="`课程目录`"/>
         </nav>
       </QCollapsibleSection>
-    <main ref="content" class="content-container ">
-      <QMarkdownRender :content="markdownContent" />
+    <main ref="content" class="content-container scroll-container">
+      <QMarkdownRender :content="markdownContent" :show-copy="false"/>
     </main>
   </div>
 </template>

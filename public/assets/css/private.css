@@ -21,17 +21,12 @@
     flex-direction: column;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     text-align: left;
-    overflow-y: auto;
-    scrollbar-width: thin; /* Firefox */
-
 }
 
 
 .content-container {
     flex: 1;
     height: var(--content-height-2);
-    overflow-y: auto; /* 关键：允许垂直滚动 */
-    scrollbar-width: thin; /* Firefox */
 }
 
 
@@ -131,3 +126,6 @@
     }
 }
 
+.border-bottom-foreground {
+    border-bottom: 1px solid var(--primary-color);
+}

@@ -32,7 +32,6 @@
           <router-link  to="/chat-ai">AI问答</router-link>
           <router-link  to="/courses">课程笔记</router-link>
           <router-link  to="/article">技术文章</router-link>
-<!--          <router-link to="/projects">项目实验</router-link>-->
           <a href="http://1.95.141.194/user/" target="_blank">项目实验</a>
           <router-link to="/about">关于我</router-link>
         </nav>
@@ -64,7 +63,7 @@
 import { useTemplateRef} from 'vue'
 import {QCollapsibleSection, QThemeToggle} from "qyani-components";
 const header = useTemplateRef<HTMLElement>('header')
-const mobileMenu = useTemplateRef<QCollapsibleSection>('mobile-menu')
+const mobileMenu = useTemplateRef<typeof QCollapsibleSection>('mobile-menu')
 const toggleMenu = () => {
   mobileMenu.value?.toggle()
 };
@@ -91,8 +90,6 @@ const toggleMenu = () => {
   margin-right: 10px;
 }
 
-/* PC导航样式 */
-.desktop-nav {}
 
 .desktop-nav a {
   text-decoration: none;
