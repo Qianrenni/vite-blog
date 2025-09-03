@@ -41,7 +41,7 @@ defineOptions({
 })
 const selectedIndex = ref(-1)
 const sidebarArrowShow = ref(window.innerWidth <= 768)
-const siderbar = useTemplateRef<QCollapsibleSection>('siderbar')
+const siderbar = useTemplateRef<typeof QCollapsibleSection>('siderbar')
 const cache:Record<number, string> = {}
 const content = ref('')
 const selectArticle = async (index: number) => {
