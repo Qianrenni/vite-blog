@@ -32,7 +32,7 @@
           <router-link  to="/chat-ai">AI问答</router-link>
           <router-link  to="/courses">课程笔记</router-link>
           <router-link  to="/article">技术文章</router-link>
-          <a href="http://1.95.141.194/user/" target="_blank">项目实验</a>
+          <a href="http://1.95.141.194/" target="_blank">项目实验</a>
           <router-link to="/about">关于我</router-link>
         </nav>
         <div class="container-align-center">
@@ -50,8 +50,7 @@
         <router-link to="/chat-ai">AI问答</router-link>
         <router-link to="/courses">课程笔记</router-link>
         <router-link to="/article">技术文章</router-link>
-<!--        <router-link to="/projects">项目实验</router-link>-->
-        <a href="http://1.95.141.194/user/" target="_blank">项目实验</a>
+        <a href="http://1.95.141.194/" target="_blank">项目实验</a>
         <router-link to="/about">关于我</router-link>
       </nav>
     </QCollapsibleSection>
