@@ -1,6 +1,6 @@
 [
   {
-    "icon": "🔧",
+    "icon": "",
     "name": "编程与算法",
     "courses": [
       {
@@ -28,10 +28,6 @@
         "dir": "algorithm"
       },
       {
-        "name": "编译原理",
-        "dir": "bian-yi-yuan-li"
-      },
-      {
         "name": "TypeScript",
         "dir": "TypeScript"
       },
@@ -42,35 +38,19 @@
     ]
   },
   {
-    "icon": "🧠",
+    "icon": "",
     "name": "计算机系统",
     "courses": [
       {
-        "name": "组成原理",
-        "dir": "zu-cheng-yuan-li"
-      },
-      {
         "name": "操作系统",
         "dir": "operatingsystem"
-      },
-      {
-        "name": "汇编语言",
-        "dir": "hui-bian-yu-yan"
-      },
-      {
-        "name": "体系结构",
-        "dir": "ti-xi-jie-gou"
       }
     ]
   },
   {
-    "icon": "⚙",
+    "icon": "",
     "name": "软件工程与开发实践",
     "courses": [
-      {
-        "name": "Web技术",
-        "dir": "web-ji-shu"
-      },
       {
         "name": "数据库原理",
         "dir": "database"
@@ -82,90 +62,26 @@
       {
         "name": "软件工程",
         "dir": "software"
-      },
-      {
-        "name": "移动应用开发",
-        "dir": "yi-dong-ying-yong-kai-fa"
       }
     ]
   },
   {
-    "icon": "🧮",
+    "icon": "",
     "name": "数学与建模",
     "courses": [
       {
-        "name": "高等数学",
-        "dir": "gao-deng-shu-xue"
-      },
-      {
         "name": "线性代数",
         "dir": "linear-algebra"
-      },
-      {
-        "name": "概率论",
-        "dir": "gai-lv-lun"
-      },
-      {
-        "name": "离散数学",
-        "dir": "li-san-shu-xue"
-      },
-      {
-        "name": "科学计算与数学建模",
-        "dir": "ke-xue-ji-suan-yu-shu-xue-jian-mo"
       }
     ]
   },
   {
-    "icon": "🌐",
-    "name": "理论与通识",
+    "icon": "",
+    "name": "框架",
     "courses": [
       {
-        "name": "大学英语",
-        "dir": "da-xue-ying-yu"
-      },
-      {
-        "name": "思想道德修养",
-        "dir": "si-xiang-dao-de-xiu-yang"
-      },
-      {
-        "name": "马克思主义基本原理",
-        "dir": "ma-ke-si-zhu-yi-ji-ben-yuan-li"
-      },
-      {
-        "name": "近代史",
-        "dir": "jin-dai-shi"
-      },
-      {
-        "name": "心理健康教育",
-        "dir": "xin-li-jian-kang-jiao-yu"
-      },
-      {
-        "name": "军事理论",
-        "dir": "jun-shi-li-lun"
-      }
-    ]
-  },
-  {
-    "icon": "🏫",
-    "name": "部署",
-    "courses": [
-      {
-        "name": "Docker",
-        "dir": "docker"
-      },
-      {
-        "name": "Maven",
-        "dir": "Maven"
-      }
-    ]
-  },
-  {
-    "icon": "🏫",
-    "name": "数据库",
-    "courses": [
-      {
-        "name": "Redis",
-        "dir": "redis"
+        "name": "Vue",
+        "dir": "Vue"
       }
     ]
   }

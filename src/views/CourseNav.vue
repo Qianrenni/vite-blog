@@ -1,5 +1,5 @@
 <template>
-  <QCollapsibleSection ref="courseNav" style="position: sticky;top:2.5rem;">
+  <QCollapsibleSection ref="courseNav" style="position: sticky;top:2.5rem;z-index: 100;">
     <div class="course-nav-container text-secondary">
       <div class="course-nav" ref="navScroll">
         <div v-for="(category, index) in categories" :key="index" class="category-row">
@@ -47,6 +47,7 @@ const clickCourse = (course: { name: string, dir: string }) => {
 
   padding: 1rem 0;
   border-bottom: 1px solid #e0e0e0;
+  z-index: 1000;
 
 }
 
