@@ -1,0 +1,1 @@
+## android开发中的activities生命周期?

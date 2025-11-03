@@ -129,3 +129,24 @@
 .border-bottom-foreground {
     border-bottom: 1px solid var(--primary-color);
 }
+
+.nav-item,.current-title{
+    max-width: 250px;
+    overflow-x:scroll;
+}
+.nav-item::-webkit-scrollbar,.current-title::-webkit-scrollbar{ 
+   width: 8px;
+   height: 8px;
+}
+.nav-item::-webkit-scrollbar-thumb,.current-title::-webkit-scrollbar-thumb{ 
+    background: var(--primary-color);
+}
+@media screen and (max-width: 768px) {
+    .nav-item,.current-title{
+        max-width: 100%;
+    }
+    .nav-item::-webkit-scrollbar,.current-title::-webkit-scrollbar{ 
+        width: 0;
+        height: 0;
+    }
+}
