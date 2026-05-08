@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Kotlin 类型",
+    "level": 1,
+    "id": "001-Kotlin 类型.md",
+    "children": []
+  },
+  {
+    "title": "控制循环",
+    "level": 1,
+    "id": "002-控制循环.md",
+    "children": []
+  },
+  {
+    "title": "包与导入",
+    "level": 1,
+    "id": "003-包与导入.md",
+    "children": []
+  },
+  {
+    "title": "类与对象",
+    "level": 1,
+    "id": "004-类与对象.md",
+    "children": []
+  },
+  {
+    "title": "函数与函数式编程",
+    "level": 1,
+    "id": "005-函数与函数式编程.md",
+    "children": []
+  },
+  {
+    "title": "空安全 (Null Safety)",
+    "level": 1,
+    "id": "006-空安全 Null Safety.md",
+    "children": []
+  },
+  {
+    "title": "相等性 (Equality)",
+    "level": 1,
+    "id": "007-相等性 Equality.md",
+    "children": []
+  },
+  {
+    "title": "this 表达式",
+    "level": 1,
+    "id": "008-this 表达式.md",
+    "children": []
+  },
+  {
+    "title": "Kotlin协程",
+    "level": 1,
+    "id": "009-Kotlin协程.md",
+    "children": []
+  },
+  {
+    "title": "Kotlin 注解 (Annotations)",
+    "level": 1,
+    "id": "010-Kotlin 注解 Annotations.md",
+    "children": []
+  },
+  {
+    "title": "Kotlin 解构声明",
+    "level": 1,
+    "id": "011-Kotlin 解构声明.md",
+    "children": []
+  },
+  {
+    "title": "Kotlin 反射",
+    "level": 1,
+    "id": "012-Kotlin 反射.md",
+    "children": []
+  },
+  {
+    "title": "读取标准输入输出 (Standard I/O in Kotlin)",
+    "level": 1,
+    "id": "013-读取标准输入输出 Standard IO in Kotlin.md",
+    "children": []
+  },
+  {
+    "title": "选择加入要求 (Opt-in Requirements)",
+    "level": 1,
+    "id": "014-选择加入要求 Opt-in Requirements.md",
+    "children": []
+  },
+  {
+    "title": "作用域函数 (Scope Functions)",
+    "level": 1,
+    "id": "015-作用域函数 Scope Functions.md",
+    "children": []
+  },
+  {
+    "title": "时间度量 (Time Measurement)",
+    "level": 1,
+    "id": "016-时间度量 Time Measurement.md",
+    "children": []
+  },
+  {
+    "title": "综合练习",
+    "level": 1,
+    "id": "017-综合练习.md",
+    "children": []
+  },
+  {
+    "title": "Gradle (build.gradle.kts)",
+    "level": 1,
+    "id": "018-Gradle buildgradlekts.md",
+    "children": []
+  },
+  {
+    "title": "Kotlin Multiplatform",
+    "level": 1,
+    "id": "019-Kotlin Multiplatform.md",
+    "children": []
+  },
+  {
+    "title": "Kotlin 常用库",
+    "level": 1,
+    "id": "020-Kotlin 常用库.md",
+    "children": []
+  }
+]
