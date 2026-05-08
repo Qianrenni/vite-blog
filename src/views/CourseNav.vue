@@ -1,8 +1,15 @@
 <template>
-  <QCollapsibleSection ref="courseNav" style="position: sticky;top:2.5rem;z-index: 100;">
+  <QCollapsibleSection
+    ref="courseNav"
+    style="position: sticky; top: 2.5rem; z-index: 100"
+  >
     <div class="course-nav-container text-secondary">
       <div class="course-nav" ref="navScroll">
-        <div v-for="(category, index) in categories" :key="index" class="category-row">
+        <div
+          v-for="(category, index) in categories"
+          :key="index"
+          class="category-row"
+        >
           <!-- 左侧分类标题 -->
           <div class="category-header">
             <span class="icon">{{ category.icon }}</span>
@@ -10,7 +17,12 @@
           </div>
           <!-- 右侧子课程列表 -->
           <div class="sub-courses">
-            <span class="button-outline radius-third-rem padding-24rem" v-for="(course ,index) in category.courses" :key="index"  @click="clickCourse(course)">
+            <span
+              class="button-outline radius-third-rem padding-24rem"
+              v-for="(course, index) in category.courses"
+              :key="index"
+              @click="clickCourse(course)"
+            >
               {{ course.name }}
             </span>
           </div>
@@ -18,22 +30,20 @@
       </div>
     </div>
   </QCollapsibleSection>
-  <router-view/>
+  <router-view />
 </template>
 <script setup lang="ts">
-
-import {useTemplateRef} from 'vue';
-import { useRouter } from 'vue-router';
-import categories from '../../public/assets/categories.json';
-import { QCollapsibleSection} from "qyani-components";
+import { useTemplateRef } from "vue";
+import { useRouter } from "vue-router";
+import categories from "../../public/assets/categories.json";
+import { QCollapsibleSection } from "qyani-components";
 defineOptions({
-  name: 'CourseNav',
-})
+  name: "CourseNav",
+});
 const router = useRouter();
-const courseNav =useTemplateRef<typeof QCollapsibleSection>('courseNav')
+const courseNav = useTemplateRef<typeof QCollapsibleSection>("courseNav");
 
-const clickCourse = (course: { name: string, dir: string }) => {
-  console.log(course);
+const clickCourse = (course: { name: string; dir: string }) => {
   courseNav.value?.toggle();
   router.push({
     path: `/courses/${course.name}/${course.dir}`,
@@ -48,7 +58,6 @@ const clickCourse = (course: { name: string, dir: string }) => {
   padding: 1rem 0;
   border-bottom: 1px solid #e0e0e0;
   z-index: 1000;
-
 }
 
 .course-nav {
@@ -105,8 +114,8 @@ const clickCourse = (course: { name: string, dir: string }) => {
     overflow-x: auto;
     flex: 1;
     /* 隐藏滚动条（各浏览器兼容） */
-    scrollbar-width: none;        /* Firefox */
-    -ms-overflow-style: none;     /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
   }
 }
 </style>

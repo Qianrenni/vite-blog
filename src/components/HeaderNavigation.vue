@@ -1,23 +1,12 @@
 <template>
   <header
-      class="
-          text-secondary
-          border-bottom-foreground
-            "
-      ref="header"
-      style="
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-            "
+    class="text-secondary border-bottom-foreground"
+    ref="header"
+    style="position: sticky; top: 0; z-index: 1000"
   >
-    <header class="
-                container-space-between
-                container-align-center
-                padding-third-rem
-                  "
+    <header
+      class="container-space-between container-align-center padding-third-rem"
     >
-
       <!-- Logo -->
       <div class="logo">
         <img src="../../public/assets/logo.png" alt="Logo" />
@@ -25,27 +14,27 @@
       </div>
       <!-- 导航菜单（PC显示） -->
       <div class="container-space-between container-align-center gap">
-        <nav
-            class="desktop-nav container gap-half"
-        >
-          <router-link  to="/">首页</router-link>
-          <router-link  to="/chat-ai">AI问答</router-link>
-          <router-link  to="/courses">课程笔记</router-link>
-          <router-link  to="/article">技术文章</router-link>
+        <nav class="desktop-nav container gap-half">
+          <router-link to="/">首页</router-link>
+          <router-link to="/chat-ai">AI问答</router-link>
+          <router-link to="/courses">课程笔记</router-link>
+          <router-link to="/article">技术文章</router-link>
           <a href="http://1.95.141.194/" target="_blank">项目实验</a>
           <router-link to="/about">关于我</router-link>
         </nav>
         <div class="container-align-center">
           <QThemeToggle size="24" />
-          <button class="hamburger" @click="toggleMenu">
-            ☰
-          </button>
+          <button class="hamburger" @click="toggleMenu">☰</button>
         </div>
       </div>
     </header>
     <!-- 响应式下拉菜单 -->
-    <QCollapsibleSection ref="mobile-menu" :is-show-arrow="false" :initial-expanded="false">
-      <nav class="mobile-menu" >
+    <QCollapsibleSection
+      ref="mobile-menu"
+      :is-show-arrow="false"
+      :initial-expanded="false"
+    >
+      <nav class="mobile-menu">
         <router-link to="/">首页</router-link>
         <router-link to="/chat-ai">AI问答</router-link>
         <router-link to="/courses">课程笔记</router-link>
@@ -58,22 +47,15 @@
 </template>
 
 <script lang="ts" setup>
-
-import { useTemplateRef} from 'vue'
-import {QCollapsibleSection, QThemeToggle} from "qyani-components";
-const header = useTemplateRef<HTMLElement>('header')
-const mobileMenu = useTemplateRef<typeof QCollapsibleSection>('mobile-menu')
+import { useTemplateRef } from "vue";
+import { QCollapsibleSection, QThemeToggle } from "qyani-components";
+const mobileMenu = useTemplateRef<typeof QCollapsibleSection>("mobile-menu");
 const toggleMenu = () => {
-  mobileMenu.value?.toggle()
+  mobileMenu.value?.toggle();
 };
-
-
-
-
 </script>
 
 <style scoped>
-
 /* 主容器 */
 
 /* Logo 样式 */
@@ -89,14 +71,13 @@ const toggleMenu = () => {
   margin-right: 10px;
 }
 
-
 .desktop-nav a {
   text-decoration: none;
   font-weight: 500;
 }
 
 /* 汉堡按钮 */
-.hamburger{
+.hamburger {
   display: none;
   background: none;
   border: none;

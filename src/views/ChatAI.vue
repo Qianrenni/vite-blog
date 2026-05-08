@@ -1,61 +1,65 @@
 <template>
   <div class="container text-secondary">
     <div class="chat-scroll">
-      <div v-for="(msg, index) in messages" :key="index" class="message-bubble  bg-card">
+      <div
+        v-for="(msg, index) in messages"
+        :key="index"
+        class="message-bubble bg-card"
+      >
         <div v-if="msg.role === 'user'" class="user">{{ msg.content }}</div>
         <QMarkdownRender v-else :content="msg.content" class="bot" />
       </div>
     </div>
 
-    <div class="input-box ">
+    <div class="input-box">
       <textarea
-          class="form-control"
-          v-model="inputText"
-          @keyup.enter="sendMessage"
-          placeholder="输入你的问题..."
-          maxlength="10000"
+        class="form-control"
+        v-model="inputText"
+        @keyup.enter="sendMessage"
+        placeholder="输入你的问题..."
+        maxlength="10000"
       ></textarea>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue';
-import {QMarkdownRender} from "qyani-components";
+import { ref } from "vue";
+import { QMarkdownRender } from "qyani-components";
 
 defineOptions({
-  name: 'ChatAI',
-})
-const inputText = ref('');
-const messages = ref<Array<{role: string, content: string}>>([]);
+  name: "ChatAI",
+});
+const inputText = ref("");
+const messages = ref<Array<{ role: string; content: string }>>([]);
 const answer_finished = ref(true);
 
 async function sendMessage() {
   if (!answer_finished.value) {
-    alert('请等待聊天助手回复完成');
+    alert("请等待聊天助手回复完成");
     return;
   }
   if (!inputText.value.trim()) return;
 
   answer_finished.value = false;
   const userMsg = {
-    role: 'user',
+    role: "user",
     content: inputText.value,
   };
 
   messages.value.push(userMsg);
   messages.value.push({
-    role: 'assistant',
-    content: '',
+    role: "assistant",
+    content: "",
   });
 
-  inputText.value = '';
-  const session_id = 'default';
+  inputText.value = "";
+  const session_id = "default";
 
   try {
-    const response = await fetch('http://localhost:8000/chat', {
-      method: 'POST',
+    const response = await fetch("http://localhost:8000/chat", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         user_input: userMsg.content,
@@ -75,7 +79,7 @@ async function sendMessage() {
     }
   } catch (error) {
     console.log(error);
-    alert('聊天助手正在闭关,敬请期待!');
+    alert("聊天助手正在闭关,敬请期待!");
   } finally {
     answer_finished.value = true;
   }
@@ -141,5 +145,4 @@ textarea {
   min-height: 40px;
   resize: none;
 }
-
 </style>
