@@ -22,9 +22,7 @@
       <QIcon icon="Menu" size="20" @click="visible = !visible" />
     </div>
     <QDrawer v-model:visible="visible" direction="left">
-      <template #default>
-        <SiderBar />
-      </template>
+      <SiderBar />
     </QDrawer>
   </header>
 </template>

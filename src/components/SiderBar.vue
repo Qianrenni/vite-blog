@@ -1,56 +1,93 @@
 <template>
-  <div class="container sider-bar bg-card">
-    <QTree :data="trees" @node-click="(node) => handleNodeClick(node)" />
+  <div class="container sider-bar bg-card scroll-container">
+    <QTree :data="trees" @node-click="handleNodeClick" />
   </div>
 </template>
 <script lang="ts" setup>
 import type { TreeNodeData } from "qyani-components";
 import { QTree } from "qyani-components";
 import categories from "../../public/assets/categories.json";
-import { onBeforeMount, ref } from "vue";
+import { onBeforeMount, ref, watch } from "vue";
 import router from "@/router";
+interface Section {
+  id: string;
+  title: string;
+  children?: Section[];
+}
 const trees = ref<TreeNodeData[]>([]);
-const p = new Map<number, { name: string; dir: string }>();
+const transformSections = (
+  sections: Section[],
+  dir: string,
+): TreeNodeData[] => {
+  return sections.map((section) => ({
+    id: `${dir}/content/${section.id}`,
+    label: section.title,
+    children: section.children
+      ? transformSections(section.children, dir)
+      : undefined,
+  }));
+};
 const handleNodeClick = (node: TreeNodeData) => {
-  if (p.has(node.id as number)) {
-    const course = p.get(node.id as number)!;
+  if (
+    (node.id as string).endsWith(".md") &&
+    (node.children?.length ?? 0) === 0
+  ) {
     router.replace({
       path: "/course",
-      query: {
-        dir: course.dir,
-        name: course.name,
-      },
+      query: { file_path: node.id },
     });
   }
 };
-onBeforeMount(() => {
-  const temp: TreeNodeData[] = [];
-  let current: TreeNodeData | undefined;
-  let id = 0;
-  categories.forEach((category) => {
-    const node = temp.find((n) => n.label === category.name);
-    if (!node) {
+onBeforeMount(async () => {
+  const cachedTrees = sessionStorage.getItem("trees");
+  if (cachedTrees) {
+    trees.value = JSON.parse(cachedTrees);
+    return;
+  }
+  await Promise.all(
+    categories.map(async (category, index) => {
       const newNode: TreeNodeData = {
-        id: id++,
+        id: `category${index}`,
         label: category.name,
         children: [],
       };
-      temp.push(newNode);
-      current = newNode;
-    } else {
-      current = node;
-    }
-    category.courses.forEach((course) => {
-      current?.children?.push({ id: id, label: course.name });
-      p.set(id, { name: course.name, dir: course.dir });
-      id++;
-    });
+      const sections: Section[][] = await Promise.all(
+        category.courses.map((course) =>
+          fetch(`/assets/md/${course.dir}/course.json`).then((res) =>
+            res.json(),
+          ),
+        ),
+      );
+      const transformedSections = sections.map((section, index) =>
+        transformSections(section, category.courses[index].dir),
+      );
+      category.courses.forEach((course, index) => {
+        newNode.children!.push({
+          id: `${course.dir}`,
+          label: course.name,
+          children: transformedSections[index],
+        });
+      });
+      return newNode;
+    }),
+  ).then((newNodes) => {
+    trees.value = newNodes;
+    sessionStorage.setItem("trees", JSON.stringify(newNodes));
   });
-  trees.value = temp;
 });
+watch(
+  () => trees.value,
+  (trees) => {
+    sessionStorage.setItem("trees", JSON.stringify(trees));
+  },
+  {
+    deep: true,
+  },
+);
 </script>
 <style scoped>
 .sider-bar {
-  max-width: 250px;
+  max-width: 75vw;
+  height: 100vh;
 }
 </style>
