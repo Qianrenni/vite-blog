@@ -1,42 +1,52 @@
 <template>
-  <div class="course-detail-container">
-    <QCollapsibleSection
-      ref="siderbar"
-      direction="up"
-      class="sidebar-container"
-      :is-show-arrow="sidebarArrowShow"
-    >
-      <nav class="sidebar scroll-container">
-        <QNavSection
-          :sections="sections"
-          @select="handleNavigation"
-          :title="`课程目录`"
-        />
-      </nav>
+  <div class="container-column">
+    <QCollapsibleSection :initial-expanded="false">
+      <QNavSection
+        class="container-w100"
+        :sections="sections"
+        :title="'课程目录'"
+        @select="(v) => loadMarkdownContent(route.query.dir as string, v.id)"
+      />
     </QCollapsibleSection>
-    <main ref="content" class="content-container scroll-container">
-      <QMarkdownRender :content="markdownContent" :show-copy="false" />
-    </main>
+    <QMarkdownRender
+      :content="markdownContent"
+      :show-copy="false"
+      class="scroll-container"
+      style="height: calc(100vh - 5rem)"
+    >
+    </QMarkdownRender>
   </div>
 </template>
 <script setup lang="ts">
-import { ref, onBeforeMount, onBeforeUnmount, watch } from "vue";
+import { ref, onBeforeMount, watch } from "vue";
 import { useRoute } from "vue-router";
 import {
   QCollapsibleSection,
   QMarkdownRender,
   QNavSection,
+  type TreeNodeData,
 } from "qyani-components";
 defineOptions({
   name: "CourseDetail",
 });
+interface Section {
+  id: string;
+  title: string;
+  children?: Section[];
+}
 const route = useRoute();
-const sections = ref([]);
+const sections = ref<Section[]>([]);
+const treeBook = ref<TreeNodeData[]>([]);
 const markdownContent = ref("");
-const sidebarArrowShow = ref(window.innerWidth <= 768);
-const content = ref<HTMLElement | null>(null);
-const siderbar = ref<InstanceType<typeof QCollapsibleSection> | null>(null);
-
+const transformSections = (sections: Section[]): TreeNodeData[] => {
+  return sections.map((section) => ({
+    label: section.title,
+    id: section.id,
+    children: section.children
+      ? transformSections(section.children)
+      : undefined,
+  }));
+};
 const loadCourseData = async (courseDir: string) => {
   try {
     const response = await fetch(`/assets/md/${courseDir}/course.json`);
@@ -48,6 +58,8 @@ const loadCourseData = async (courseDir: string) => {
     if (firstFile) {
       await loadMarkdownContent(courseDir, firstFile.id);
     }
+    treeBook.value = transformSections(sections.value);
+    console.log(treeBook.value);
   } catch (err) {
     console.log(err);
     markdownContent.value = "<h2>找不到该课程的内容</h2>";
@@ -81,41 +93,17 @@ const loadMarkdownContent = async (courseDir: string, fileName: string) => {
   }
 };
 
-const handleNavigation = async (item: any) => {
-  await loadMarkdownContent(route.params.courseDir as string, item.id);
-  setTimeout(() => {
-    content.value?.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, 50);
-};
-
-const handleResize = () => {
-  if (window.innerWidth <= 768) {
-    sidebarArrowShow.value = true;
-  } else {
-    sidebarArrowShow.value = false;
-    siderbar.value?.open();
-  }
-};
+onBeforeMount(() => {
+  const dir = route.query.dir as string;
+  loadCourseData(dir);
+});
 watch(
-  () => route.params,
-  async (newVal, oldVal) => {
-    if (newVal.courseDir !== oldVal.courseDir) {
-      await loadCourseData(newVal.courseDir as string);
+  () => route.query.dir,
+  (newVal, oldVal) => {
+    if (newVal !== oldVal) {
+      loadCourseData(newVal as string);
     }
   },
 );
-onBeforeMount(() => {
-  window.addEventListener("resize", handleResize);
-  if (route.params.courseDir) {
-    loadCourseData(route.params.courseDir as string);
-  }
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", handleResize);
-});
 </script>
 <style scoped></style>

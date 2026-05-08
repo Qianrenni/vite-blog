@@ -1,14 +1,18 @@
-import {defineConfig, loadEnv} from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import path from 'path';
 // https://vite.dev/config/
-const env=loadEnv('',process.cwd(),'');
-const {QYANI_COMPONENTS_PATH}=env
-console.log(`QYANI_COMPONENTS_PATH is ${QYANI_COMPONENTS_PATH}`)
-export default defineConfig({
-  plugins: [vue()],
-  resolve: {
-    alias: {
-      // 'qyani-components': "F:/eclipse/worakjava/qyani-components/src/index.ts"
-    }
-  }
-})
+export default defineConfig(() => {
+  return {
+    plugins: [vue()],
+    server: {
+      port: 8080,
+      host: '0.0.0.0',
+    },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src'),
+      },
+    },
+  };
+});
